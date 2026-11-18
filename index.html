@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+  <title>Hey Mesh! </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: boarder-box;
+    }
+    body {
+      min-height: 100vh;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #ffe4f, #eadfff,
+                                  #fff0f5);
+      color: #75c72;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    .container {
+      min-height: 100vh
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px
+      position: relative;
+    }
+    .card {
+      width: 100%;
+      max-width: 440px;
+      boarder-radius: 28px;
+      background: rgba(255,255,255,0.76);
+      box-shadow: 0 15px 50px #b98bbd35;
+      backdrop-filter: blur(12px);
+      animation: appear 1.2s ease;
+    }
+    h1 {font-sixe: 2.5rem;
+        margin-bottom:15px;
+        color: #c16eaa;
+       }
+    .subtitle {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+    .envelope {
+      font-size: 90px;cursor: pointer;
+      display: inline-block;
+      transition: transform .4s;
+      animation: float 2.5 infinite ease-in-out;
+    }
+    .envelope:hover {
+      transform: scale(1.15) rotate(-8deg);
+    }
+    button {
+      border: none;
+      padding: 14px 25px;
+      border-radius: 30px; 
